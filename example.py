@@ -49,5 +49,5 @@ df_pd = df2.toPandas()
 # Pandas to Spark
 df2 = spark.createDataFrame(df_pd)
 
+replace column name characters in spark: renamed_df_sp = df_sp.select([F.col(col).alias(col.replace(' ','_')) for col in df_sp.columns])
 
-# In[ ]:
