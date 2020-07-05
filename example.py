@@ -43,4 +43,11 @@ df2.collect()
 df2.show()
 
 
+# Spark to Pandas
+df_pd = df2.toPandas()
+
+# Pandas to Spark
+df2 = spark_session.createDataFrame(df_pd)
+
+
 # In[ ]:
