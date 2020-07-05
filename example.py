@@ -47,7 +47,7 @@ df2.show()
 df_pd = df2.toPandas()
 
 # Pandas to Spark
-df2 = spark_session.createDataFrame(df_pd)
+df2 = spark.createDataFrame(df_pd)
 
 
 # In[ ]:
